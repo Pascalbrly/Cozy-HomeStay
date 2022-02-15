@@ -1,0 +1,407 @@
+:root{
+    --pr-color : #214D76;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+
+/* Navbar Style */
+.navbar{
+    background: var(--pr-color);
+    z-index: 3;
+}
+*{
+    z-index: 2;
+}
+.img-banner{
+    z-index: 1;
+}
+.navbar-brand{
+    font-weight: 700;
+    font-size: 20px;
+    
+}
+
+.nav-link{
+    font-size: 16px;
+    color: white;
+}
+
+.nav-link.active{
+    font-weight: 700;
+}
+
+.button-secondary{
+    width: 133px;
+    height: 40px;
+    background-color: white;
+    color: var(--pr-color);
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.button-primary{
+    width: 133px;
+    height: 40px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Banner */
+#banner{
+    background: linear-gradient(160deg, var(--pr-color), #000);
+    width: 100%;
+    height: 100vh;
+}
+
+/* .img-banner{
+    height: 100%;
+} */
+
+.banner-tagline h1{
+    color: white;
+    font-weight: 700;
+    font-size: 33px;
+    line-height: normal;
+}
+
+.banner-tagline p{
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: normal;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.button-lg-primary{
+    width: 183px;
+    height: 62px;
+    background-color: white;
+    color: var(--pr-color);
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+/* Search Panel */
+.info-panel{
+    background-color: white;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin-top: -75px;
+    padding: 30px;
+    width: 1115px;
+}
+.container.info{
+    width: 1260px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    padding: 0;
+}
+
+.info-panel p{
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.col-lg input{
+    border: none;
+    background-color: #EFEFEF;
+}
+
+/* Border */
+.border{
+    background-color: #EFEFEF;
+    width: 270px;
+    height: 41px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.form{
+    border: none;
+    background-color: #EFEFEF;
+    width: 220px;
+}
+
+.button-search{
+    width: 189px;
+    height: 41px;
+    background-color: var(--pr-color);
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.search p{
+    color: #322D2D;
+    font-weight: 600;
+}
+
+.search-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0px 15px;
+    justify-content: space-between;
+}
+
+/* Recommendation */
+#recommendation{
+    width: 100%;
+    padding: 100px 0px;
+    /* background-color: black; */
+}
+
+.container h2{
+    color: var(--pr-color);
+    font-weight: 600;
+    font-size: 48px;
+}
+ 
+.sub-title{
+    color: #B2B2B2;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.see-more{
+    width: 128px;
+    height: 40px;    
+    background-color: var(--pr-color);
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Card Produk */
+.row2{
+    margin-top: 19px;
+    margin-bottom: 50px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px 35px; 
+    justify-content: space-between;
+    /* justify-items: center; */
+    /* align-items: center; */
+    /* background-color: black; */
+}
+/* 
+.row2 .card-produk{
+    margin-top: 19px;
+} */
+
+
+.card-produk{
+    position: relative;
+    /* width: 340px; */
+    border-radius: 5px;
+    overflow-y: hidden;
+    /* margin: auto; */
+    /* background-color: black; */
+}
+.row2 .detail{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.637);
+    position: absolute;
+    bottom: -35%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid #fff;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.144);
+    transition: .5s ease-in-out;
+}
+
+.card-produk:hover .detail{
+    bottom: 0;
+    transition: .5s ease-in-out;
+}
+
+.detail .title-card h4{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #322D2D;
+}
+
+.detail .btn-produk{
+    background-color: var(--pr-color);
+    width: 105px;
+    height: 33px;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+.btn-produk a{
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+
+}
+
+.container-place {
+    max-width: 1139px;
+}
+
+.col .card-produk > img {
+    width: 100%;
+}
+
+/* Features */
+#features{
+    padding: 100px 0;
+}
+
+.container h3{
+    color: var(--pr-color);
+    font-weight: 600;
+    font-size: 48px;
+}
+
+.card-features{
+    padding: 40px;
+    width: 100%;
+    height: 313px;
+    background-color: #F0F8FE;
+    border-radius: 5px;
+    box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.05);
+}
+
+.card-features h5 {
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+
+    transition: .5s ease-in;
+}
+
+.card-features p {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+
+    transition: .5s ease-in;
+}
+
+.circle-icon{
+    width: 70px;
+    height: 70px;
+    background-color: #193A59;
+    border-radius: 50%;
+
+    transition: .5s ease-in;
+}
+
+/* Hover */
+.card-features:hover{
+    padding: 40px;
+    width: 100%;
+    height: 313px;
+    background: linear-gradient(150deg, var(--pr-color), #000);
+    border-radius: 5px;
+    box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.05);
+}
+
+.card-features:hover h5 {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+
+    transition: .5s ease-in-out;
+}
+
+.card-features:hover p {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+
+    transition: .5s ease-in-out;
+}
+
+.card-features:hover .circle-icon{
+    background-color: white;
+    transition: .5s ease-in-out;
+}
+
+/* .circle-icon:hover{
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+
+    transition: .5s ease-in-out;
+} */
+
+/* Contact Us */
+#contact{
+    /* width: 100%; */
+    padding: 90px 0;
+}
+
+.text-area1 ,.text-area2{
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+.text-area3{
+    width: 100%;
+    height: 149px;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+
+.send{
+    width: 133px;
+    height: 53px;
+    background-color: var(--pr-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 14px;
+}
+
+/* Footer */
+footer{
+    background-color: var(--pr-color);
+}
+
+.col-4{
+    width: auto;
+    margin-right: 16px;
+}
+
+.sosmed-icon i{
+    font-size: 3rem;
+    /* color: var(--main-color); */
+    margin: 20px 5px;
+}
+
+.copyright{
+    color: white;
+}
+
+.title-footer{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
